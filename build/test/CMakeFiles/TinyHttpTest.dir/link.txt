@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-8/root/usr/bin/c++   -g -Wall -Wextra  -rdynamic CMakeFiles/TinyHttpTest.dir/HttpServerTest.cpp.o  -o ../../bin/TinyHttpTest  -Wl,-rpath,/home/webserver/Project/TinyHTTP/lib:/usr/lib64/openssl11 -lnetsocket ../../lib/libtinyhttp.so -lpthread -lnetsocket /usr/lib64/openssl11/libssl.so /usr/lib64/openssl11/libcrypto.so -lmysqlcppconn -lpthread 

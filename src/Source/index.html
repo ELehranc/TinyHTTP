@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>复杂测试页面</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      nav {
+        background-color: #444;
+        color: white;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>复杂测试页面</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">联系我们</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>欢迎来到测试页面</h2>
+        <p>这是一个更复杂的测试页面，包含了导航栏、多个部分和一些交互元素。</p>
+        <button onclick="showMessage()">点击我</button>
+      </section>
+      <section>
+        <h2>更多信息</h2>
+        <p>这里可以放置更多的内容，例如文章、图片等。</p>
+        <ul>
+          <li>项目 1</li>
+          <li>项目 2</li>
+          <li>项目 3</li>
+        </ul>
+      </section>
+    </main>
+    <footer>&copy; 2025 复杂测试页面版权所有</footer>
+    <script>
+      function showMessage() {
+        alert('你点击了按钮！');
+      }
+    </script>
+  </body>
+</html>
