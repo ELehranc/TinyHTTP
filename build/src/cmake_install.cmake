@@ -1,4 +1,4 @@
-# Install script for directory: /home/webserver/Project/TinyHTTP/src
+# Install script for directory: /home/webserver/Project/TinyHTTP/TinyHTTP/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

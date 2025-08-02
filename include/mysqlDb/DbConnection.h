@@ -7,8 +7,8 @@
 #include <cppconn/resultset.h>
 #include <mysql_driver.h>
 #include <mysql/mysql.h>
-#include <mymuduo/Logger.h>
-#include <mymuduo/Timestamp.h>
+#include <netsocket/base/Logger.h>
+#include <netsocket/base/Timestamp.h>
 #include "DbException.h"
 
 class DbConnection

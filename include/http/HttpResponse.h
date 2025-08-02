@@ -1,7 +1,7 @@
 #pragma once
 
-#include <mymuduo/TcpServer.h>
-#include <mymuduo/Buffer.h>
+#include <netsocket/net/TcpServer.h>
+#include <netsocket/net/Buffer.h>
 #include <map>
 
 class HttpResponse

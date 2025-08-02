@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/webserver/Project/TinyHTTP/test/HttpServerTest.cpp" "/home/webserver/Project/TinyHTTP/build/test/CMakeFiles/TinyHttpTest.dir/HttpServerTest.cpp.o"
+  "/home/webserver/Project/TinyHTTP/TinyHTTP/test/HttpServerTest.cpp" "/home/webserver/Project/TinyHTTP/TinyHTTP/build/test/CMakeFiles/TinyHttpTest.dir/HttpServerTest.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,7 +18,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/webserver/Project/TinyHTTP/build/src/CMakeFiles/tinyhttp.dir/DependInfo.cmake"
+  "/home/webserver/Project/TinyHTTP/TinyHTTP/build/src/CMakeFiles/tinyhttp.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

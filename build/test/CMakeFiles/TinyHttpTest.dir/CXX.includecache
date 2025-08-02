@@ -39,11 +39,11 @@ memory
 -
 unordered_map
 -
-mymuduo/TcpServer.h
+netsocket/net/TcpServer.h
 -
-mymuduo/EventLoop.h
+netsocket/net/EventLoop.h
 -
-mymuduo/Logger.h
+netsocket/base/Logger.h
 -
 HttpContext.h
 ../include/http/HttpContext.h
@@ -71,15 +71,15 @@ CorsMiddleware.h
 ../include/http/CorsMiddleware.h
 
 ../include/http/HttpConnection.h
-mymuduo/Connection.h
-../include/http/mymuduo/Connection.h
+netsocket/net/Connection.h
+../include/http/netsocket/net/Connection.h
 HttpContext.h
 ../include/http/HttpContext.h
 
 ../include/http/HttpContext.h
 iostream
 -
-mymuduo/TcpServer.h
+netsocket/net/TcpServer.h
 -
 HttpRequest.h
 ../include/http/HttpRequest.h
@@ -91,13 +91,13 @@ string
 -
 unordered_map
 -
-mymuduo/Timestamp.h
+netsocket/base/Timestamp.h
 -
 
 ../include/http/HttpResponse.h
-mymuduo/TcpServer.h
+netsocket/net/TcpServer.h
 -
-mymuduo/Buffer.h
+netsocket/net/Buffer.h
 -
 map
 -
@@ -183,9 +183,9 @@ SslTypes.h
 ../include/http/SslConnection.h
 SslContext.h
 ../include/http/SslContext.h
-mymuduo/Connection.h
+netsocket/net/Connection.h
 -
-mymuduo/Buffer.h
+netsocket/net/Buffer.h
 -
 openssl/ssl.h
 -
@@ -208,9 +208,9 @@ memory
 string
 -
 
-/home/webserver/Project/TinyHTTP/test/HttpServerTest.cpp
+/home/webserver/Project/TinyHTTP/TinyHTTP/test/HttpServerTest.cpp
 HTTPServer.h
-/home/webserver/Project/TinyHTTP/test/HTTPServer.h
+/home/webserver/Project/TinyHTTP/TinyHTTP/test/HTTPServer.h
 
 /usr/include/openssl11/openssl/asn1.h
 time.h

@@ -14,7 +14,7 @@ int main()
     LOG_INFO("收到根路径请求，准备发送响应数据");
 
     try {
-        std::ifstream file("/home/webserver/Project/TinyHTTP/src/Source/index.html");
+        std::ifstream file("/home/webserver/Project/TinyHTTP/TinyHTTP/src/Source/index.html");
         if(!file.is_open()){
             throw std::runtime_error("无法打开 HTML 文件");
         }
@@ -35,7 +35,6 @@ int main()
         resp->addHeader("Content-Length", std::to_string(htmlContent.size()));
         // 设置响应体内容为 HTML 文件内容
         resp->setBody(htmlContent);
-
         // 记录日志，表明响应数据已设置完成
         LOG_INFO ( "响应数据设置完成，准备发送");
        

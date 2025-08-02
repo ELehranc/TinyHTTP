@@ -20,7 +20,7 @@ test/CMakeFiles/TinyHttpTest.dir/HttpServerTest.cpp.o
  ../include/http/SslConnection.h
  ../include/http/SslContext.h
  ../include/http/SslTypes.h
- /home/webserver/Project/TinyHTTP/test/HttpServerTest.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/test/HttpServerTest.cpp
  /usr/include/openssl11/openssl/asn1.h
  /usr/include/openssl11/openssl/asn1err.h
  /usr/include/openssl11/openssl/async.h

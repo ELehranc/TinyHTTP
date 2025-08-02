@@ -68,10 +68,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/webserver/Project/TinyHTTP
+CMAKE_SOURCE_DIR = /home/webserver/Project/TinyHTTP/TinyHTTP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/webserver/Project/TinyHTTP/build
+CMAKE_BINARY_DIR = /home/webserver/Project/TinyHTTP/TinyHTTP/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,14 +146,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/webserver/Project/TinyHTTP/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/webserver/Project/TinyHTTP/build/CMakeFiles /home/webserver/Project/TinyHTTP/build/src/CMakeFiles/progress.marks
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/webserver/Project/TinyHTTP/build/CMakeFiles 0
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/webserver/Project/TinyHTTP/TinyHTTP/build/CMakeFiles /home/webserver/Project/TinyHTTP/TinyHTTP/build/src/CMakeFiles/progress.marks
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/webserver/Project/TinyHTTP/TinyHTTP/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -163,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/webserver/Project/TinyHTTP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/tinyhttp.dir/rule:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/tinyhttp.dir/rule
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/tinyhttp.dir/rule
 .PHONY : src/CMakeFiles/tinyhttp.dir/rule
 
 # Convenience name for target.
@@ -188,7 +188,7 @@ tinyhttp: src/CMakeFiles/tinyhttp.dir/rule
 
 # fast build rule for target.
 tinyhttp/fast:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/build
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/build
 .PHONY : tinyhttp/fast
 
 http/CorsMiddleware.o: http/CorsMiddleware.cpp.o
@@ -197,7 +197,7 @@ http/CorsMiddleware.o: http/CorsMiddleware.cpp.o
 
 # target to build an object file
 http/CorsMiddleware.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/CorsMiddleware.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/CorsMiddleware.cpp.o
 .PHONY : http/CorsMiddleware.cpp.o
 
 http/CorsMiddleware.i: http/CorsMiddleware.cpp.i
@@ -206,7 +206,7 @@ http/CorsMiddleware.i: http/CorsMiddleware.cpp.i
 
 # target to preprocess a source file
 http/CorsMiddleware.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/CorsMiddleware.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/CorsMiddleware.cpp.i
 .PHONY : http/CorsMiddleware.cpp.i
 
 http/CorsMiddleware.s: http/CorsMiddleware.cpp.s
@@ -215,7 +215,7 @@ http/CorsMiddleware.s: http/CorsMiddleware.cpp.s
 
 # target to generate assembly for a file
 http/CorsMiddleware.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/CorsMiddleware.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/CorsMiddleware.cpp.s
 .PHONY : http/CorsMiddleware.cpp.s
 
 http/HTTPServer.o: http/HTTPServer.cpp.o
@@ -224,7 +224,7 @@ http/HTTPServer.o: http/HTTPServer.cpp.o
 
 # target to build an object file
 http/HTTPServer.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HTTPServer.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HTTPServer.cpp.o
 .PHONY : http/HTTPServer.cpp.o
 
 http/HTTPServer.i: http/HTTPServer.cpp.i
@@ -233,7 +233,7 @@ http/HTTPServer.i: http/HTTPServer.cpp.i
 
 # target to preprocess a source file
 http/HTTPServer.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HTTPServer.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HTTPServer.cpp.i
 .PHONY : http/HTTPServer.cpp.i
 
 http/HTTPServer.s: http/HTTPServer.cpp.s
@@ -242,7 +242,7 @@ http/HTTPServer.s: http/HTTPServer.cpp.s
 
 # target to generate assembly for a file
 http/HTTPServer.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HTTPServer.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HTTPServer.cpp.s
 .PHONY : http/HTTPServer.cpp.s
 
 http/HttpConnection.o: http/HttpConnection.cpp.o
@@ -251,7 +251,7 @@ http/HttpConnection.o: http/HttpConnection.cpp.o
 
 # target to build an object file
 http/HttpConnection.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpConnection.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpConnection.cpp.o
 .PHONY : http/HttpConnection.cpp.o
 
 http/HttpConnection.i: http/HttpConnection.cpp.i
@@ -260,7 +260,7 @@ http/HttpConnection.i: http/HttpConnection.cpp.i
 
 # target to preprocess a source file
 http/HttpConnection.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpConnection.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpConnection.cpp.i
 .PHONY : http/HttpConnection.cpp.i
 
 http/HttpConnection.s: http/HttpConnection.cpp.s
@@ -269,7 +269,7 @@ http/HttpConnection.s: http/HttpConnection.cpp.s
 
 # target to generate assembly for a file
 http/HttpConnection.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpConnection.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpConnection.cpp.s
 .PHONY : http/HttpConnection.cpp.s
 
 http/HttpContext.o: http/HttpContext.cpp.o
@@ -278,7 +278,7 @@ http/HttpContext.o: http/HttpContext.cpp.o
 
 # target to build an object file
 http/HttpContext.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpContext.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpContext.cpp.o
 .PHONY : http/HttpContext.cpp.o
 
 http/HttpContext.i: http/HttpContext.cpp.i
@@ -287,7 +287,7 @@ http/HttpContext.i: http/HttpContext.cpp.i
 
 # target to preprocess a source file
 http/HttpContext.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpContext.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpContext.cpp.i
 .PHONY : http/HttpContext.cpp.i
 
 http/HttpContext.s: http/HttpContext.cpp.s
@@ -296,7 +296,7 @@ http/HttpContext.s: http/HttpContext.cpp.s
 
 # target to generate assembly for a file
 http/HttpContext.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpContext.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpContext.cpp.s
 .PHONY : http/HttpContext.cpp.s
 
 http/HttpRequest.o: http/HttpRequest.cpp.o
@@ -305,7 +305,7 @@ http/HttpRequest.o: http/HttpRequest.cpp.o
 
 # target to build an object file
 http/HttpRequest.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpRequest.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpRequest.cpp.o
 .PHONY : http/HttpRequest.cpp.o
 
 http/HttpRequest.i: http/HttpRequest.cpp.i
@@ -314,7 +314,7 @@ http/HttpRequest.i: http/HttpRequest.cpp.i
 
 # target to preprocess a source file
 http/HttpRequest.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpRequest.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpRequest.cpp.i
 .PHONY : http/HttpRequest.cpp.i
 
 http/HttpRequest.s: http/HttpRequest.cpp.s
@@ -323,7 +323,7 @@ http/HttpRequest.s: http/HttpRequest.cpp.s
 
 # target to generate assembly for a file
 http/HttpRequest.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpRequest.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpRequest.cpp.s
 .PHONY : http/HttpRequest.cpp.s
 
 http/HttpResponse.o: http/HttpResponse.cpp.o
@@ -332,7 +332,7 @@ http/HttpResponse.o: http/HttpResponse.cpp.o
 
 # target to build an object file
 http/HttpResponse.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpResponse.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpResponse.cpp.o
 .PHONY : http/HttpResponse.cpp.o
 
 http/HttpResponse.i: http/HttpResponse.cpp.i
@@ -341,7 +341,7 @@ http/HttpResponse.i: http/HttpResponse.cpp.i
 
 # target to preprocess a source file
 http/HttpResponse.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpResponse.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpResponse.cpp.i
 .PHONY : http/HttpResponse.cpp.i
 
 http/HttpResponse.s: http/HttpResponse.cpp.s
@@ -350,7 +350,7 @@ http/HttpResponse.s: http/HttpResponse.cpp.s
 
 # target to generate assembly for a file
 http/HttpResponse.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpResponse.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/HttpResponse.cpp.s
 .PHONY : http/HttpResponse.cpp.s
 
 http/MidllewareChain.o: http/MidllewareChain.cpp.o
@@ -359,7 +359,7 @@ http/MidllewareChain.o: http/MidllewareChain.cpp.o
 
 # target to build an object file
 http/MidllewareChain.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/MidllewareChain.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/MidllewareChain.cpp.o
 .PHONY : http/MidllewareChain.cpp.o
 
 http/MidllewareChain.i: http/MidllewareChain.cpp.i
@@ -368,7 +368,7 @@ http/MidllewareChain.i: http/MidllewareChain.cpp.i
 
 # target to preprocess a source file
 http/MidllewareChain.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/MidllewareChain.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/MidllewareChain.cpp.i
 .PHONY : http/MidllewareChain.cpp.i
 
 http/MidllewareChain.s: http/MidllewareChain.cpp.s
@@ -377,7 +377,7 @@ http/MidllewareChain.s: http/MidllewareChain.cpp.s
 
 # target to generate assembly for a file
 http/MidllewareChain.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/MidllewareChain.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/MidllewareChain.cpp.s
 .PHONY : http/MidllewareChain.cpp.s
 
 http/Router.o: http/Router.cpp.o
@@ -386,7 +386,7 @@ http/Router.o: http/Router.cpp.o
 
 # target to build an object file
 http/Router.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Router.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Router.cpp.o
 .PHONY : http/Router.cpp.o
 
 http/Router.i: http/Router.cpp.i
@@ -395,7 +395,7 @@ http/Router.i: http/Router.cpp.i
 
 # target to preprocess a source file
 http/Router.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Router.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Router.cpp.i
 .PHONY : http/Router.cpp.i
 
 http/Router.s: http/Router.cpp.s
@@ -404,7 +404,7 @@ http/Router.s: http/Router.cpp.s
 
 # target to generate assembly for a file
 http/Router.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Router.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Router.cpp.s
 .PHONY : http/Router.cpp.s
 
 http/RouterTest.o: http/RouterTest.cpp.o
@@ -413,7 +413,7 @@ http/RouterTest.o: http/RouterTest.cpp.o
 
 # target to build an object file
 http/RouterTest.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/RouterTest.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/RouterTest.cpp.o
 .PHONY : http/RouterTest.cpp.o
 
 http/RouterTest.i: http/RouterTest.cpp.i
@@ -422,7 +422,7 @@ http/RouterTest.i: http/RouterTest.cpp.i
 
 # target to preprocess a source file
 http/RouterTest.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/RouterTest.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/RouterTest.cpp.i
 .PHONY : http/RouterTest.cpp.i
 
 http/RouterTest.s: http/RouterTest.cpp.s
@@ -431,7 +431,7 @@ http/RouterTest.s: http/RouterTest.cpp.s
 
 # target to generate assembly for a file
 http/RouterTest.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/RouterTest.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/RouterTest.cpp.s
 .PHONY : http/RouterTest.cpp.s
 
 http/Session.o: http/Session.cpp.o
@@ -440,7 +440,7 @@ http/Session.o: http/Session.cpp.o
 
 # target to build an object file
 http/Session.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Session.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Session.cpp.o
 .PHONY : http/Session.cpp.o
 
 http/Session.i: http/Session.cpp.i
@@ -449,7 +449,7 @@ http/Session.i: http/Session.cpp.i
 
 # target to preprocess a source file
 http/Session.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Session.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Session.cpp.i
 .PHONY : http/Session.cpp.i
 
 http/Session.s: http/Session.cpp.s
@@ -458,7 +458,7 @@ http/Session.s: http/Session.cpp.s
 
 # target to generate assembly for a file
 http/Session.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Session.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/Session.cpp.s
 .PHONY : http/Session.cpp.s
 
 http/SessionManager.o: http/SessionManager.cpp.o
@@ -467,7 +467,7 @@ http/SessionManager.o: http/SessionManager.cpp.o
 
 # target to build an object file
 http/SessionManager.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionManager.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionManager.cpp.o
 .PHONY : http/SessionManager.cpp.o
 
 http/SessionManager.i: http/SessionManager.cpp.i
@@ -476,7 +476,7 @@ http/SessionManager.i: http/SessionManager.cpp.i
 
 # target to preprocess a source file
 http/SessionManager.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionManager.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionManager.cpp.i
 .PHONY : http/SessionManager.cpp.i
 
 http/SessionManager.s: http/SessionManager.cpp.s
@@ -485,7 +485,7 @@ http/SessionManager.s: http/SessionManager.cpp.s
 
 # target to generate assembly for a file
 http/SessionManager.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionManager.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionManager.cpp.s
 .PHONY : http/SessionManager.cpp.s
 
 http/SessionStrorage.o: http/SessionStrorage.cpp.o
@@ -494,7 +494,7 @@ http/SessionStrorage.o: http/SessionStrorage.cpp.o
 
 # target to build an object file
 http/SessionStrorage.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionStrorage.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionStrorage.cpp.o
 .PHONY : http/SessionStrorage.cpp.o
 
 http/SessionStrorage.i: http/SessionStrorage.cpp.i
@@ -503,7 +503,7 @@ http/SessionStrorage.i: http/SessionStrorage.cpp.i
 
 # target to preprocess a source file
 http/SessionStrorage.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionStrorage.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionStrorage.cpp.i
 .PHONY : http/SessionStrorage.cpp.i
 
 http/SessionStrorage.s: http/SessionStrorage.cpp.s
@@ -512,7 +512,7 @@ http/SessionStrorage.s: http/SessionStrorage.cpp.s
 
 # target to generate assembly for a file
 http/SessionStrorage.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionStrorage.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SessionStrorage.cpp.s
 .PHONY : http/SessionStrorage.cpp.s
 
 http/SslConfig.o: http/SslConfig.cpp.o
@@ -521,7 +521,7 @@ http/SslConfig.o: http/SslConfig.cpp.o
 
 # target to build an object file
 http/SslConfig.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConfig.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConfig.cpp.o
 .PHONY : http/SslConfig.cpp.o
 
 http/SslConfig.i: http/SslConfig.cpp.i
@@ -530,7 +530,7 @@ http/SslConfig.i: http/SslConfig.cpp.i
 
 # target to preprocess a source file
 http/SslConfig.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConfig.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConfig.cpp.i
 .PHONY : http/SslConfig.cpp.i
 
 http/SslConfig.s: http/SslConfig.cpp.s
@@ -539,7 +539,7 @@ http/SslConfig.s: http/SslConfig.cpp.s
 
 # target to generate assembly for a file
 http/SslConfig.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConfig.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConfig.cpp.s
 .PHONY : http/SslConfig.cpp.s
 
 http/SslConnection.o: http/SslConnection.cpp.o
@@ -548,7 +548,7 @@ http/SslConnection.o: http/SslConnection.cpp.o
 
 # target to build an object file
 http/SslConnection.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConnection.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConnection.cpp.o
 .PHONY : http/SslConnection.cpp.o
 
 http/SslConnection.i: http/SslConnection.cpp.i
@@ -557,7 +557,7 @@ http/SslConnection.i: http/SslConnection.cpp.i
 
 # target to preprocess a source file
 http/SslConnection.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConnection.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConnection.cpp.i
 .PHONY : http/SslConnection.cpp.i
 
 http/SslConnection.s: http/SslConnection.cpp.s
@@ -566,7 +566,7 @@ http/SslConnection.s: http/SslConnection.cpp.s
 
 # target to generate assembly for a file
 http/SslConnection.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConnection.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslConnection.cpp.s
 .PHONY : http/SslConnection.cpp.s
 
 http/SslContext.o: http/SslContext.cpp.o
@@ -575,7 +575,7 @@ http/SslContext.o: http/SslContext.cpp.o
 
 # target to build an object file
 http/SslContext.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslContext.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslContext.cpp.o
 .PHONY : http/SslContext.cpp.o
 
 http/SslContext.i: http/SslContext.cpp.i
@@ -584,7 +584,7 @@ http/SslContext.i: http/SslContext.cpp.i
 
 # target to preprocess a source file
 http/SslContext.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslContext.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslContext.cpp.i
 .PHONY : http/SslContext.cpp.i
 
 http/SslContext.s: http/SslContext.cpp.s
@@ -593,7 +593,7 @@ http/SslContext.s: http/SslContext.cpp.s
 
 # target to generate assembly for a file
 http/SslContext.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslContext.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/http/SslContext.cpp.s
 .PHONY : http/SslContext.cpp.s
 
 mysqlDb/DbConnection.o: mysqlDb/DbConnection.cpp.o
@@ -602,7 +602,7 @@ mysqlDb/DbConnection.o: mysqlDb/DbConnection.cpp.o
 
 # target to build an object file
 mysqlDb/DbConnection.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnection.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnection.cpp.o
 .PHONY : mysqlDb/DbConnection.cpp.o
 
 mysqlDb/DbConnection.i: mysqlDb/DbConnection.cpp.i
@@ -611,7 +611,7 @@ mysqlDb/DbConnection.i: mysqlDb/DbConnection.cpp.i
 
 # target to preprocess a source file
 mysqlDb/DbConnection.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnection.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnection.cpp.i
 .PHONY : mysqlDb/DbConnection.cpp.i
 
 mysqlDb/DbConnection.s: mysqlDb/DbConnection.cpp.s
@@ -620,7 +620,7 @@ mysqlDb/DbConnection.s: mysqlDb/DbConnection.cpp.s
 
 # target to generate assembly for a file
 mysqlDb/DbConnection.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnection.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnection.cpp.s
 .PHONY : mysqlDb/DbConnection.cpp.s
 
 mysqlDb/DbConnectionPool.o: mysqlDb/DbConnectionPool.cpp.o
@@ -629,7 +629,7 @@ mysqlDb/DbConnectionPool.o: mysqlDb/DbConnectionPool.cpp.o
 
 # target to build an object file
 mysqlDb/DbConnectionPool.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnectionPool.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnectionPool.cpp.o
 .PHONY : mysqlDb/DbConnectionPool.cpp.o
 
 mysqlDb/DbConnectionPool.i: mysqlDb/DbConnectionPool.cpp.i
@@ -638,7 +638,7 @@ mysqlDb/DbConnectionPool.i: mysqlDb/DbConnectionPool.cpp.i
 
 # target to preprocess a source file
 mysqlDb/DbConnectionPool.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnectionPool.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnectionPool.cpp.i
 .PHONY : mysqlDb/DbConnectionPool.cpp.i
 
 mysqlDb/DbConnectionPool.s: mysqlDb/DbConnectionPool.cpp.s
@@ -647,7 +647,7 @@ mysqlDb/DbConnectionPool.s: mysqlDb/DbConnectionPool.cpp.s
 
 # target to generate assembly for a file
 mysqlDb/DbConnectionPool.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnectionPool.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tinyhttp.dir/build.make src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnectionPool.cpp.s
 .PHONY : mysqlDb/DbConnectionPool.cpp.s
 
 # Help Target
@@ -725,6 +725,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/webserver/Project/TinyHTTP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

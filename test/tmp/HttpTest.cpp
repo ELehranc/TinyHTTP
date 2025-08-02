@@ -1,8 +1,8 @@
 #include "HttpContext.h"
 #include "HttpRequest.h"
 #include "HttpResponse.h"
-#include <mymuduo/Buffer.h>
-#include <mymuduo/Timestamp.h>
+#include <netsocket/net/uffer.h>
+#include <netsocket/base/Timestamp.h>
 
 #include <cassert>
 #include <sstream>

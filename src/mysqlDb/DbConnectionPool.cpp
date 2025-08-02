@@ -1,6 +1,6 @@
 #include "DbConnectionPool.h"
 #include "DbException.h"
-#include <mymuduo/Logger.h>
+#include <netsocket/base/Logger.h>
 
 void DbConnectionPool::init(const std::string &host,
                             const std::string &user,
@@ -177,31 +177,24 @@ void DbConnectionPool::scannerConnectionTask()
 
 void DbConnectionPool::produceConnectionTask()
 {
-
     for (;;)
     {
-
         std::unique_lock<std::mutex> lock(mutex_);
-        while (!connections_.empty())
+
+        // 当连接数低于初始大小时，就生产新连接
+        while (connectionCnt_ >= initSize_ || connectionCnt_ >= maxSize_)
         {
-            cv_.wait(lock); // 还有连接，就一直在这里等待
+            cv_.wait(lock); // 等待通知
         }
 
-        // 连接数未达到上限，继续创建连接
-        if (connectionCnt_ < maxSize_)
+        auto p = createConnection();
+        if (p)
         {
-
-            auto p = createConnection();
-            if (p)
-            {
-
-                connections_.push(p);
-                p->reflashAliveTime();
-                connectionCnt_++;
-            }
+            connections_.push(p);
+            p->reflashAliveTime();
+            connectionCnt_++;
+            cv_.notify_all(); // 通知消费者有新连接可用
         }
-        // 通知消费者线程，可以获取连接了
-        cv_.notify_all();
     }
 }
 

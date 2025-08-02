@@ -68,10 +68,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/webserver/Project/TinyHTTP
+CMAKE_SOURCE_DIR = /home/webserver/Project/TinyHTTP/TinyHTTP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/webserver/Project/TinyHTTP/build
+CMAKE_BINARY_DIR = /home/webserver/Project/TinyHTTP/TinyHTTP/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,14 +146,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/webserver/Project/TinyHTTP/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/webserver/Project/TinyHTTP/build/CMakeFiles /home/webserver/Project/TinyHTTP/build/test/CMakeFiles/progress.marks
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/webserver/Project/TinyHTTP/build/CMakeFiles 0
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/webserver/Project/TinyHTTP/TinyHTTP/build/CMakeFiles /home/webserver/Project/TinyHTTP/TinyHTTP/build/test/CMakeFiles/progress.marks
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/webserver/Project/TinyHTTP/TinyHTTP/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -163,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/webserver/Project/TinyHTTP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/TinyHttpTest.dir/rule:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/TinyHttpTest.dir/rule
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/TinyHttpTest.dir/rule
 .PHONY : test/CMakeFiles/TinyHttpTest.dir/rule
 
 # Convenience name for target.
@@ -188,7 +188,7 @@ TinyHttpTest: test/CMakeFiles/TinyHttpTest.dir/rule
 
 # fast build rule for target.
 TinyHttpTest/fast:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/TinyHttpTest.dir/build.make test/CMakeFiles/TinyHttpTest.dir/build
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/TinyHttpTest.dir/build.make test/CMakeFiles/TinyHttpTest.dir/build
 .PHONY : TinyHttpTest/fast
 
 HttpServerTest.o: HttpServerTest.cpp.o
@@ -197,7 +197,7 @@ HttpServerTest.o: HttpServerTest.cpp.o
 
 # target to build an object file
 HttpServerTest.cpp.o:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/TinyHttpTest.dir/build.make test/CMakeFiles/TinyHttpTest.dir/HttpServerTest.cpp.o
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/TinyHttpTest.dir/build.make test/CMakeFiles/TinyHttpTest.dir/HttpServerTest.cpp.o
 .PHONY : HttpServerTest.cpp.o
 
 HttpServerTest.i: HttpServerTest.cpp.i
@@ -206,7 +206,7 @@ HttpServerTest.i: HttpServerTest.cpp.i
 
 # target to preprocess a source file
 HttpServerTest.cpp.i:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/TinyHttpTest.dir/build.make test/CMakeFiles/TinyHttpTest.dir/HttpServerTest.cpp.i
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/TinyHttpTest.dir/build.make test/CMakeFiles/TinyHttpTest.dir/HttpServerTest.cpp.i
 .PHONY : HttpServerTest.cpp.i
 
 HttpServerTest.s: HttpServerTest.cpp.s
@@ -215,7 +215,7 @@ HttpServerTest.s: HttpServerTest.cpp.s
 
 # target to generate assembly for a file
 HttpServerTest.cpp.s:
-	cd /home/webserver/Project/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/TinyHttpTest.dir/build.make test/CMakeFiles/TinyHttpTest.dir/HttpServerTest.cpp.s
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/TinyHttpTest.dir/build.make test/CMakeFiles/TinyHttpTest.dir/HttpServerTest.cpp.s
 .PHONY : HttpServerTest.cpp.s
 
 # Help Target
@@ -245,6 +245,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/webserver/Project/TinyHTTP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/webserver/Project/TinyHTTP/TinyHTTP/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

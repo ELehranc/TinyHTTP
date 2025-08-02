@@ -1,7 +1,7 @@
 #pragma once
 #include "SslContext.h"
-#include <mymuduo/Connection.h>
-#include <mymuduo/Buffer.h>
+#include <netsocket/net/Connection.h>
+#include <netsocket/net/Buffer.h>
 #include <openssl/ssl.h>
 #include <memory>
 

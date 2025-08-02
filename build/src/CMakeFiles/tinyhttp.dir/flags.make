@@ -6,5 +6,5 @@ CXX_FLAGS =  -g -Wall -Wextra -fPIC   -std=gnu++17
 
 CXX_DEFINES = -Dtinyhttp_EXPORTS
 
-CXX_INCLUDES = -I/home/webserver/Project/TinyHTTP/include/http -I/home/webserver/Project/TinyHTTP/include/mysqlDb -I/usr/include/openssl11 -I/usr/include/mysql-cppconn/jdbc 
+CXX_INCLUDES = -I/home/webserver/Project/TinyHTTP/TinyHTTP/include/http -I/home/webserver/Project/TinyHTTP/TinyHTTP/include/mysqlDb -I/usr/include/openssl11 -I/usr/include/mysql-cppconn/jdbc 
 

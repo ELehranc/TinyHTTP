@@ -7,7 +7,7 @@ src/CMakeFiles/tinyhttp.dir/http/CorsMiddleware.cpp.o
  ../include/http/HttpRequest.h
  ../include/http/HttpResponse.h
  ../include/http/Middleware.h
- /home/webserver/Project/TinyHTTP/src/http/CorsMiddleware.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/CorsMiddleware.cpp
 src/CMakeFiles/tinyhttp.dir/http/HTTPServer.cpp.o
  ../include/http/CorsConfig.h
  ../include/http/CorsMiddleware.h
@@ -27,7 +27,7 @@ src/CMakeFiles/tinyhttp.dir/http/HTTPServer.cpp.o
  ../include/http/SslConnection.h
  ../include/http/SslContext.h
  ../include/http/SslTypes.h
- /home/webserver/Project/TinyHTTP/src/http/HTTPServer.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/HTTPServer.cpp
  /usr/include/openssl11/openssl/asn1.h
  /usr/include/openssl11/openssl/asn1err.h
  /usr/include/openssl11/openssl/async.h
@@ -87,50 +87,50 @@ src/CMakeFiles/tinyhttp.dir/http/HTTPServer.cpp.o
  /usr/include/openssl11/openssl/x509_vfy.h
  /usr/include/openssl11/openssl/x509err.h
 src/CMakeFiles/tinyhttp.dir/http/HttpConnection.cpp.o
- /home/webserver/Project/TinyHTTP/src/http/HttpConnection.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/HttpConnection.cpp
 src/CMakeFiles/tinyhttp.dir/http/HttpContext.cpp.o
  ../include/http/HttpContext.h
  ../include/http/HttpRequest.h
- /home/webserver/Project/TinyHTTP/src/http/HttpContext.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/HttpContext.cpp
 src/CMakeFiles/tinyhttp.dir/http/HttpRequest.cpp.o
  ../include/http/HttpRequest.h
- /home/webserver/Project/TinyHTTP/src/http/HttpRequest.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/HttpRequest.cpp
 src/CMakeFiles/tinyhttp.dir/http/HttpResponse.cpp.o
  ../include/http/HttpResponse.h
- /home/webserver/Project/TinyHTTP/src/http/HttpResponse.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/HttpResponse.cpp
 src/CMakeFiles/tinyhttp.dir/http/MidllewareChain.cpp.o
  ../include/http/HttpRequest.h
  ../include/http/HttpResponse.h
  ../include/http/Middleware.h
  ../include/http/MiddlewareChain.h
- /home/webserver/Project/TinyHTTP/src/http/MidllewareChain.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/MidllewareChain.cpp
 src/CMakeFiles/tinyhttp.dir/http/Router.cpp.o
  ../include/http/HttpRequest.h
  ../include/http/HttpResponse.h
  ../include/http/Router.h
  ../include/http/RouterHandler.h
- /home/webserver/Project/TinyHTTP/src/http/Router.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/Router.cpp
 src/CMakeFiles/tinyhttp.dir/http/RouterTest.cpp.o
  ../include/http/HttpContext.h
  ../include/http/HttpRequest.h
  ../include/http/HttpResponse.h
  ../include/http/Router.h
  ../include/http/RouterHandler.h
- /home/webserver/Project/TinyHTTP/src/http/RouterTest.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/RouterTest.cpp
 src/CMakeFiles/tinyhttp.dir/http/Session.cpp.o
  ../include/http/HttpRequest.h
  ../include/http/HttpResponse.h
  ../include/http/Session.h
  ../include/http/SessionManager.h
  ../include/http/SessionStorage.h
- /home/webserver/Project/TinyHTTP/src/http/Session.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/Session.cpp
 src/CMakeFiles/tinyhttp.dir/http/SessionManager.cpp.o
  ../include/http/HttpRequest.h
  ../include/http/HttpResponse.h
  ../include/http/Session.h
  ../include/http/SessionManager.h
  ../include/http/SessionStorage.h
- /home/webserver/Project/TinyHTTP/src/http/SessionManager.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/SessionManager.cpp
  /usr/include/openssl11/openssl/e_os2.h
  /usr/include/openssl11/openssl/opensslconf-x86_64.h
  /usr/include/openssl11/openssl/opensslconf.h
@@ -142,11 +142,11 @@ src/CMakeFiles/tinyhttp.dir/http/SessionManager.cpp.o
 src/CMakeFiles/tinyhttp.dir/http/SessionStrorage.cpp.o
  ../include/http/Session.h
  ../include/http/SessionStorage.h
- /home/webserver/Project/TinyHTTP/src/http/SessionStrorage.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/SessionStrorage.cpp
 src/CMakeFiles/tinyhttp.dir/http/SslConfig.cpp.o
  ../include/http/SslConfig.h
  ../include/http/SslTypes.h
- /home/webserver/Project/TinyHTTP/src/http/SslConfig.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/SslConfig.cpp
  /usr/include/openssl11/openssl/asn1.h
  /usr/include/openssl11/openssl/asn1err.h
  /usr/include/openssl11/openssl/async.h
@@ -207,7 +207,7 @@ src/CMakeFiles/tinyhttp.dir/http/SslConnection.cpp.o
  ../include/http/SslConnection.h
  ../include/http/SslContext.h
  ../include/http/SslTypes.h
- /home/webserver/Project/TinyHTTP/src/http/SslConnection.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/SslConnection.cpp
  /usr/include/openssl11/openssl/asn1.h
  /usr/include/openssl11/openssl/asn1err.h
  /usr/include/openssl11/openssl/async.h
@@ -270,7 +270,7 @@ src/CMakeFiles/tinyhttp.dir/http/SslContext.cpp.o
  ../include/http/SslConfig.h
  ../include/http/SslContext.h
  ../include/http/SslTypes.h
- /home/webserver/Project/TinyHTTP/src/http/SslContext.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/http/SslContext.cpp
  /usr/include/openssl11/openssl/asn1.h
  /usr/include/openssl11/openssl/asn1err.h
  /usr/include/openssl11/openssl/async.h
@@ -333,7 +333,7 @@ src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnection.cpp.o
  ../include/mysqlDb/DbConnection.h
  ../include/mysqlDb/DbConnectionPool.h
  ../include/mysqlDb/DbException.h
- /home/webserver/Project/TinyHTTP/src/mysqlDb/DbConnection.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/mysqlDb/DbConnection.cpp
  /usr/include/mysql-cppconn/jdbc/cppconn/build_config.h
  /usr/include/mysql-cppconn/jdbc/cppconn/callback.h
  /usr/include/mysql-cppconn/jdbc/cppconn/config.h
@@ -353,7 +353,7 @@ src/CMakeFiles/tinyhttp.dir/mysqlDb/DbConnectionPool.cpp.o
  ../include/mysqlDb/DbConnection.h
  ../include/mysqlDb/DbConnectionPool.h
  ../include/mysqlDb/DbException.h
- /home/webserver/Project/TinyHTTP/src/mysqlDb/DbConnectionPool.cpp
+ /home/webserver/Project/TinyHTTP/TinyHTTP/src/mysqlDb/DbConnectionPool.cpp
  /usr/include/mysql-cppconn/jdbc/cppconn/build_config.h
  /usr/include/mysql-cppconn/jdbc/cppconn/callback.h
  /usr/include/mysql-cppconn/jdbc/cppconn/config.h
